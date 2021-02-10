@@ -14,6 +14,7 @@ defmodule Calculator.Core do
   def divide(acc, number), do: acc / number
   def inc(acc), do: add(acc, 1)
   def dec(acc), do: subtract(acc, 1)
+  def negate(acc), do: multiply(acc, -1)
 
   def fold(list, acc, func) do
     Enum.reduce(list, acc, fn item, acc -> func.(acc, item) end)

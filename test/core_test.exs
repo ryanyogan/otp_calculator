@@ -26,6 +26,10 @@ defmodule CoreTest do
     assert dec(2) == 1
   end
 
+  test "negate" do
+    assert negate(10) == -10
+  end
+
   test "folds a list" do
     assert fold([1, 2, 3, 4], 0, &add/2) == 10
   end
